@@ -1,5 +1,5 @@
 # Valheim Azure Bicep
-Utilizes [Bicep](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview?tabs=bicep) to generate Azure resource group and resources needed for hosting Valheim dedicated server.
+[Bicep](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview?tabs=bicep) templates to generate Azure resource group and resources needed for hosting Valheim dedicated server.
 
 
 # Overview
