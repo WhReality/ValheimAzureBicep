@@ -1,4 +1,4 @@
-# Valheim dedicated server azure bicep templates
+# Valheim Azure Bicep
 Utilizes [Bicep](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview?tabs=bicep) to generate Azure resource group and resources needed for hosting Valheim dedicated server.
 
 
@@ -11,10 +11,8 @@ Server files are stored in [Premium File Storage Account](https://azure.microsof
 
 Whole shabang is based on this great [blog post](https://jakelunn.medium.com/host-a-valheim-dedicated-server-using-azure-container-instances-81d35b061f08) by Jake Lunn
 
-
 # Prequises
  [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
-
 
 # Edit parameters
 Edit `main.parameters.json` and fill out the parameters :
@@ -47,7 +45,7 @@ Edit `main.parameters.json` and fill out the parameters :
     - ResourceGroup: `rg-my-valheim`
     - Container Instances Resource: `aci-my-valheim-westeurope`
     - FQDN: `my-valheim.westeurope.azurecontainer.io` 
-        - **This is the address you contact the valheim server**
+        - **This is the address you use to connect to the valheim server**
 
 `serverPass`
 - Server Password
@@ -60,15 +58,18 @@ Edit `main.parameters.json` and fill out the parameters :
 
 # Deployment
 
-Make sure you are authneticated with Azure CLI and that you have right subscription selected:
+Make sure you are authenticated with Azure CLI and that you have right subscription selected:
+
 Login:
 ```
 az login
 ```
+
 List subscriptions:
 ```
 az account list -o table
 ```
+
 Set subscription:
 ```
 az account set -s <name or id>
