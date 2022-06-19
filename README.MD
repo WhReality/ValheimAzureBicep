@@ -1,4 +1,4 @@
-# Valheim Azure Bicep
+# Valheim Dedicated Server Bicep Template
 [Bicep](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview?tabs=bicep) templates to generate Azure resource group and resources needed for hosting Valheim dedicated server.
 
 
